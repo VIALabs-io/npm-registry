@@ -1,13 +1,28 @@
 const chainConfig = {
-  "name": "base-sepolia",
+  "name": "base-testnet",
   "network": "testnet",
   "type": "evm",
   "chainId": 84532,
   "message": "0xE700Ee5d8B7dEc62987849356821731591c048cF",
   "feeToken": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
-  "weth": "0x32D9c1DA01F221aa0eab4A0771Aaa8E2344ECd35",
+  "weth": "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
   "usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
-  "featureGateway": "0x210873CC12784d2E17bF8a5A7fEB763C2FeAaa71"
+  "rpc": "https://84532.rpc.vialabs.io/",
+  "explorer": "https://sepolia.basescan.org/",
+  "featureGateway": "0x9Fc203b5dc5c29912D5c2BEF6ADBC6C8d783ea9B",
+  "featureCCTP": "0x32346520e902a3f69829867078fde4ddea15a229",
+  "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
+  "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
+  "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+  "isCCTPEnabled": true,
+  // This is a root chain for CCTP
+  "cctpLeafChains": [
+    {
+      "chainId": 83,
+      "rootManager": "0x0553dDfc9A01D200B8608158295157fcBC63479d",
+      "leafManager": "0xF58725d7a4c0fBf7978A93772F284e8019Ee8E53"
+    }
+  ]
 };
 
 module.exports = chainConfig;

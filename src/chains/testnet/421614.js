@@ -9,7 +9,26 @@ const chainConfig = {
   "usdc": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
   "rpc": "https://421614.rpc.vialabs.io/",
   "explorer": "https://sepolia.arbiscan.io/",
-  "featureGateway": "0x884b03E52772D5200898041bEC20377C8A59F731"
+  "featureGateway": "0x884b03E52772D5200898041bEC20377C8A59F731",
+  "featureCCTP": "0xA7dc7535A182B90E1dA305e43b79F8e5fEaEb559",
+  "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
+  "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
+  "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+  "protoCCTPGateway": "0xDE4FBA9A559559CA7FD808EA4b28bc01B624FFa9",
+  "isCCTPEnabled": true,
+  // This is a root chain for CCTP
+  "cctpLeafChains": [
+    {
+      "chainId": 997,
+      "rootManager": "0x448811d70486296d4e2B60E4258328957C94EaA7",
+      "leafManager": "0x28d03e97e68Fb138a2318A2627806dfAF9972755"
+    },
+    {
+      "chainId": 37714555429,
+      "rootManager": "0x46bFafc74f8dD1FC4c8Ea963ac881504Ba75D5fD",
+      "leafManager": "0x9d1421d5813f6ba074880472D5775e820e18Fd7A"
+    }
+  ]
 };
 
 module.exports = chainConfig;

@@ -6,6 +6,7 @@ typechain
 typechain-types
 .vscode
 deployments/localhost
+orig.js
 
 #Hardhat files
 cache

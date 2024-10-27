@@ -16,6 +16,14 @@ export interface ChainConfig {
   featureGateway?: string;
   protoCCTPGateway?: string;
   intentCCTPGateway?: string;
+  featureCCTP?: string;
+  // CCTP-specific fields
+  isCCTPEnabled?: boolean;
+  cctpLeafChains?: Array<{
+    chainId: number;
+    rootManager: string;
+    leafManager: string;
+  }>;
 }
 
 export interface ChainConfigs {

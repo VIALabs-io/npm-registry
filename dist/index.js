@@ -23,12 +23,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getCCTPGateways = exports.supportsCCTP = exports.getHardhatNetworks = exports.getAllChainIds = exports.getAllTestnetChainIds = exports.getAllMainnetChainIds = exports.isTestnet = exports.isMainnet = exports.getChainConfig = void 0;
+exports.globalConfig = exports.getCCTPGateways = exports.supportsCCTP = exports.getAccountantAddress = exports.getHardhatNetworks = exports.getAllChainIds = exports.getAllTestnetChainIds = exports.getAllMainnetChainIds = exports.isTestnet = exports.isMainnet = exports.getChainConfig = void 0;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const utils_1 = require("./utils");
 Object.defineProperty(exports, "supportsCCTP", { enumerable: true, get: function () { return utils_1.supportsCCTP; } });
 Object.defineProperty(exports, "getCCTPGateways", { enumerable: true, get: function () { return utils_1.getCCTPGateways; } });
+const global_1 = require("./global");
+Object.defineProperty(exports, "globalConfig", { enumerable: true, get: function () { return global_1.globalConfig; } });
 const mainnetConfigs = {};
 const testnetConfigs = {};
 // Load mainnet configs
@@ -103,3 +105,7 @@ function getHardhatNetworks(options = {}) {
     return networks;
 }
 exports.getHardhatNetworks = getHardhatNetworks;
+function getAccountantAddress(isTestnet) {
+    return (0, global_1.getAccountantAddress)(isTestnet);
+}
+exports.getAccountantAddress = getAccountantAddress;
