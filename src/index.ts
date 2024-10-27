@@ -1,31 +1,25 @@
-import * as fs from 'fs';
-import * as path from 'path';
 import { ChainConfig } from './types';
 import { supportsCCTP, getCCTPGateways } from './utils';
 import { globalConfig, getAccountantAddress as getAccountantAddressFromGlobal } from './global';
 
+// Default empty configs
 const mainnetConfigs: { [chainId: number]: ChainConfig } = {};
 const testnetConfigs: { [chainId: number]: ChainConfig } = {};
 
-// Load mainnet configs
-const mainnetPath = path.join(__dirname, 'chains', 'mainnet');
-fs.readdirSync(mainnetPath).forEach(file => {
-  if (file.endsWith('.js')) {
-    const chainId = parseInt(file.split('.')[0]);
-    const config = require(path.join(mainnetPath, file));
-    mainnetConfigs[chainId] = config;
-  }
-});
+// Try to import chain configs if they exist
+try {
+  const mainnetData = require('./chains/mainnet.json');
+  Object.assign(mainnetConfigs, mainnetData);
+} catch (error) {
+  console.warn('Mainnet chain configurations not found. They will be generated during build.');
+}
 
-// Load testnet configs
-const testnetPath = path.join(__dirname, 'chains', 'testnet');
-fs.readdirSync(testnetPath).forEach(file => {
-  if (file.endsWith('.js')) {
-    const chainId = parseInt(file.split('.')[0]);
-    const config = require(path.join(testnetPath, file));
-    testnetConfigs[chainId] = config;
-  }
-});
+try {
+  const testnetData = require('./chains/testnet.json');
+  Object.assign(testnetConfigs, testnetData);
+} catch (error) {
+  console.warn('Testnet chain configurations not found. They will be generated during build.');
+}
 
 export function getChainConfig(chainId: number): ChainConfig | undefined {
   return mainnetConfigs[chainId] || testnetConfigs[chainId];
@@ -55,11 +49,8 @@ export function getHardhatNetworks(options: { chainIds?: number[], defaultConfig
   const { chainIds = getAllChainIds(), defaultConfig = {} } = options;
   const networks: { [name: string]: any } = {};
 
-  console.log(`Processing ${chainIds.length} chain IDs`);
-
   chainIds.forEach(chainId => {
     const config = getChainConfig(chainId);
-    console.log(`Processing chainId: ${chainId}, config: ${JSON.stringify(config)}`);
     
     if (config) {
       if (config.rpc) {
@@ -70,16 +61,10 @@ export function getHardhatNetworks(options: { chainIds?: number[], defaultConfig
           chainId: config.chainId,
           ...defaultConfig,
         };
-        console.log(`Added network: ${networkName}`);
-      } else {
-        console.log(`Skipping chainId ${chainId}: No RPC URL`);
       }
-    } else {
-      console.log(`No config found for chainId: ${chainId}`);
     }
   });
 
-  console.log(`Total networks added: ${Object.keys(networks).length}`);
   return networks;
 }
 

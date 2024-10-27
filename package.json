@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && npm run copy-files && node scripts/generateChainConfig.js",
-    "copy-files": "mkdir -p dist/chains && cp -R src/chains dist/",
+    "prebuild": "node scripts/generateChainConfig.js",
+    "build": "tsc",
     "prepare": "npm run build",
     "test": "jest"
   },
