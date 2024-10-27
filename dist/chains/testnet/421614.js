@@ -9,11 +9,12 @@ const chainConfig = {
   "usdc": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
   "rpc": "https://421614.rpc.vialabs.io/",
   "explorer": "https://sepolia.arbiscan.io/",
-  "featureGateway": "0x700e1760c1429ee491EDFCe94ACd9e8Da71c0FD1",
-  "featureCCTP": "0xA7dc7535A182B90E1dA305e43b79F8e5fEaEb559",
+  "featureGateway": "0x176c9Eb7aabC9A9857E6a08980b463b6C6FE0486",
+  "featureCCTP": "0x761fC9166a95f686e55B66C397d04C0889c5c92F",
   "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
   "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
   "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+  "protoCCTPGateway": "0x5abA6886778DDEB3a34ea4C58CD9BeEa264026c7",
   "isCCTPEnabled": true,
   // This is a root chain for CCTP
   "cctpLeafChains": [

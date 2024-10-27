@@ -673,8 +673,8 @@
       "type": "evm",
       "chainId": 2911,
       "message": "0x15AC559DA4951c796DB6620fAb286B96840D039A",
-      "feeToken": "0x",
-      "weth": "0x"
+      "feeToken": "",
+      "weth": ""
     },
     "3068": {
       "name": "Bifrost Mainnet",
@@ -1376,7 +1376,7 @@
       "feeToken": "0xDf0F025AA89787A48cfE638CBC053BBF7d93b343",
       "weth": "0xa7719d49246730e2ec6B69aAfC4873E74053b2eB",
       "usdc": "0xDf0F025AA89787A48cfE638CBC053BBF7d93b343",
-      "featureGateway": "0x528B8932a5cd82E1a99fEd86E607DF75ce889ce8"
+      "featureGateway": "0x19C7Aa38e6fef4D7Ad92910838A0f9481ba684E9"
     },
     "89": {
       "name": "viction-testnet",
@@ -1433,7 +1433,7 @@
       "feeToken": "0x3B142eC3E18890b06bBD893ed4C7dB548E0B6D04",
       "weth": "0xDb52110E8f15a72Ccf3ce205c30C27bdB846057D",
       "usdc": "0x3B142eC3E18890b06bBD893ed4C7dB548E0B6D04",
-      "featureGateway": "0x5604CC48fcEAb07F29f010981F6dc41846D37780"
+      "featureGateway": "0xFA954E8B93376Df6aC418510C2f11bCCe8493836"
     },
     "282": {
       "name": "cronoszk-testnet",
@@ -1506,7 +1506,8 @@
       "message": "0x8DE416ABd87307f966a5655701F2f78012585225",
       "feeToken": "0x84126A2D8dF65Bb32E6952c351f877E59e02a17f",
       "weth": "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F",
-      "featureGateway": "0xb01b6E0d4AA0081336D02EdfaF67E68fdBF9B00b"
+      "usdc": "0x84126A2D8dF65Bb32E6952c351f877E59e02a17f",
+      "featureGateway": "0xd72F37d7315Ed8B157628470ae71c6Be89dF9398"
     },
     "1001": {
       "name": "nexis-zk-testnet",
@@ -1879,15 +1880,15 @@
       "chainId": 43113,
       "message": "0x8f92F60ffFB05d8c64E755e54A216090D8D6Eaf9",
       "feeToken": "0x5425890298aed601595a70ab815c96711a31bc65",
-      "weth": "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
+      "weth": "0xD59A1806BAa7f46d1e07A07649784fA682708794",
       "usdc": "0x5425890298aed601595a70ab815c96711a31bc65",
       "rpc": "https://43113.rpc.vialabs.io/",
       "explorer": "https://testnet.snowtrace.io/",
       "featureGateway": "0x70B806CBE98953befd43c558E70AeD133f98A44B",
-      "featureCCTP": "0x81447ef70771ad90a4e5b2fb57B81F4C09e8026a",
-      "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
-      "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
-      "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+      "featureCCTP": "0x5EdA91d22B31A0eD5717295fCBA0C5E990Fdf1B9",
+      "circleTokenMessenger": "0xeb08f243e5d3fcff26a9e38ae5520a669f4019d0",
+      "circleMessageTransmitter": "0xa9fb1b3009dcb79e2fe346c16a604b8fa8ae0a79",
+      "circleTokenMinter": "0x4ed8867f9947a5fe140c9dc1c6f207f3489f501e",
       "isCCTPEnabled": true,
       "cctpLeafChains": [
         {
@@ -1927,7 +1928,8 @@
       "chainId": 48899,
       "message": "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
       "feeToken": "0xA1AeC40c1B58226407B8b0dF050c8D9ab0df7a7D",
-      "weth": "0x9d75f706b986F0075b3778a12153390273dE95eC"
+      "weth": "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      "featureGateway": "0x1D006355e6778d06a40296eE510bbc09f60c9e1c"
     },
     "57000": {
       "name": "rollux-testnet",
@@ -1974,15 +1976,16 @@
       "chainId": 80002,
       "message": "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
       "feeToken": "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582",
-      "weth": "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
+      "weth": "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
       "usdc": "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582",
       "rpc": "https://80002.rpc.vialabs.io/",
       "explorer": "https://mumbai.polygonscan.com/",
       "featureGateway": "0x9Fe535E31A20A9dFe5D66CE47dbb2fB69ea63Ab9",
-      "featureCCTP": "0xe35DCe76731820B117Dca4a0dFf6aA7c81284d76",
+      "featureCCTP": "0x2661237BFEc9d09b7cbca3AA01361f1C2650705d",
       "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
       "circleMessageTransmitter": "0x7865fAfC2db2093669d92c0F33AeEF291086BEFD",
-      "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A"
+      "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+      "isCCTPEnabled": true
     },
     "84532": {
       "name": "base-testnet",
@@ -1991,14 +1994,14 @@
       "chainId": 84532,
       "message": "0xE700Ee5d8B7dEc62987849356821731591c048cF",
       "feeToken": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
-      "weth": "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
+      "weth": "0x32D9c1DA01F221aa0eab4A0771Aaa8E2344ECd35",
       "usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
       "rpc": "https://84532.rpc.vialabs.io/",
       "explorer": "https://sepolia.basescan.org/",
       "featureGateway": "0x9Fc203b5dc5c29912D5c2BEF6ADBC6C8d783ea9B",
-      "featureCCTP": "0x32346520e902a3f69829867078fde4ddea15a229",
+      "featureCCTP": "0x2253C9B38aCE84c189FbbCc25535dbA5A0015Ef0",
       "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
-      "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
+      "circleMessageTransmitter": "0x7865fAfC2db2093669d92c0F33AeEF291086BEFD",
       "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
       "isCCTPEnabled": true,
       "cctpLeafChains": [
@@ -2059,11 +2062,12 @@
       "usdc": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
       "rpc": "https://421614.rpc.vialabs.io/",
       "explorer": "https://sepolia.arbiscan.io/",
-      "featureGateway": "0x700e1760c1429ee491EDFCe94ACd9e8Da71c0FD1",
-      "featureCCTP": "0xA7dc7535A182B90E1dA305e43b79F8e5fEaEb559",
+      "featureGateway": "0x176c9Eb7aabC9A9857E6a08980b463b6C6FE0486",
+      "featureCCTP": "0x761fC9166a95f686e55B66C397d04C0889c5c92F",
       "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
       "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
       "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+      "protoCCTPGateway": "0x5abA6886778DDEB3a34ea4C58CD9BeEa264026c7",
       "isCCTPEnabled": true,
       "cctpLeafChains": [
         {
@@ -2130,14 +2134,14 @@
       "chainId": 11155111,
       "message": "0xF2AA17F92d4D9Be1c0b0D2A3235A06143A2D729f",
       "feeToken": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
-      "weth": "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
+      "weth": "0x6c884e8b8139a87A68b7c4350a9a25305f6de0b6",
       "usdc": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
       "rpc": "https://11155111.rpc.vialabs.io/",
       "explorer": "https://sepolia.etherscan.io/",
       "featureGateway": "0xbf5288c8e8d5A1b89EFC2CefF1836f4c1392507f",
-      "featureCCTP": "0x15CF10bB1a5f54f01561D6efB6bBe86f9B72260E",
+      "featureCCTP": "0x987177924594a83b93aD04C6A57BFB59a78f632E",
       "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
-      "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
+      "circleMessageTransmitter": "0x7865fAfC2db2093669d92c0F33AeEF291086BEFD",
       "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
       "isCCTPEnabled": true,
       "cctpLeafChains": [
@@ -2155,15 +2159,16 @@
       "chainId": 11155420,
       "message": "0xe511183765E1F325702EF8F3d92046e9d6DF6742",
       "feeToken": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
-      "weth": "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
+      "weth": "0x3574311D950E04A48289DA64759016c26725B180",
       "usdc": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
       "rpc": "https://11155420.rpc.vialabs.io/",
       "explorer": "https://sepolia-optimism.etherscan.io/",
       "featureGateway": "0x5f44Da08068cb232F8Fa7F730017079A1d06B800",
-      "featureCCTP": "0xB9ab1b6Fd6BF951aFF2Fd909cE2aDB185A785a53",
+      "featureCCTP": "0xc1c93f3A19C70780308529d39BE1f8786ECd8CC9",
       "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
       "circleMessageTransmitter": "0x7865fAfC2db2093669d92c0F33AeEF291086BEFD",
-      "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A"
+      "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+      "isCCTPEnabled": true
     },
     "65100003": {
       "name": "autonity-testnet",
@@ -2281,7 +2286,7 @@
       "message": "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
       "feeToken": "0x2777023E33B88CE622B15eCfA4ADa3cb5a9C545f",
       "weth": "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
-      "featureGateway": "0x79Ef331759b1C9277313EC5f4ABACC658Ef8F526"
+      "featureGateway": "0x06EF0100f5CA88E6F1F5742BD3a913D29Db39505"
     }
   }
 }

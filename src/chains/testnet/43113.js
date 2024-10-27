@@ -10,10 +10,10 @@ const chainConfig = {
   "rpc": "https://43113.rpc.vialabs.io/",
   "explorer": "https://testnet.snowtrace.io/",
   "featureGateway": "0x70B806CBE98953befd43c558E70AeD133f98A44B",
-  "featureCCTP": "0x81447ef70771ad90a4e5b2fb57B81F4C09e8026a",
-  "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
-  "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
-  "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
+  "featureCCTP": "0x5EdA91d22B31A0eD5717295fCBA0C5E990Fdf1B9",
+  "circleTokenMessenger": "0xeb08f243e5d3fcff26a9e38ae5520a669f4019d0",
+  "circleMessageTransmitter": "0xa9fb1b3009dcb79e2fe346c16a604b8fa8ae0a79",
+  "circleTokenMinter": "0x4ed8867f9947a5fe140c9dc1c6f207f3489f501e",
   "isCCTPEnabled": true,
   // This is a root chain for CCTP
   "cctpLeafChains": [
