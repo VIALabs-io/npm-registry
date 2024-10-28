@@ -6,42 +6,25 @@ Object.defineProperty(exports, "supportsCCTP", { enumerable: true, get: function
 Object.defineProperty(exports, "getCCTPGateways", { enumerable: true, get: function () { return utils_1.getCCTPGateways; } });
 const global_1 = require("./global");
 Object.defineProperty(exports, "globalConfig", { enumerable: true, get: function () { return global_1.globalConfig; } });
-// Default empty configs
-const mainnetConfigs = {};
-const testnetConfigs = {};
-// Try to import chain configs if they exist
-try {
-    const mainnetData = require('./chains/mainnet.json');
-    Object.assign(mainnetConfigs, mainnetData);
-}
-catch (error) {
-    console.warn('Mainnet chain configurations not found. They will be generated during build.');
-}
-try {
-    const testnetData = require('./chains/testnet.json');
-    Object.assign(testnetConfigs, testnetData);
-}
-catch (error) {
-    console.warn('Testnet chain configurations not found. They will be generated during build.');
-}
+const chainConfigs_1 = require("./chainConfigs");
 function getChainConfig(chainId) {
-    return mainnetConfigs[chainId] || testnetConfigs[chainId];
+    return chainConfigs_1.mainnetConfigs[chainId] || chainConfigs_1.testnetConfigs[chainId];
 }
 exports.getChainConfig = getChainConfig;
 function isMainnet(chainId) {
-    return chainId in mainnetConfigs;
+    return chainId in chainConfigs_1.mainnetConfigs;
 }
 exports.isMainnet = isMainnet;
 function isTestnet(chainId) {
-    return chainId in testnetConfigs;
+    return chainId in chainConfigs_1.testnetConfigs;
 }
 exports.isTestnet = isTestnet;
 function getAllMainnetChainIds() {
-    return Object.keys(mainnetConfigs).map(Number);
+    return Object.keys(chainConfigs_1.mainnetConfigs).map(Number);
 }
 exports.getAllMainnetChainIds = getAllMainnetChainIds;
 function getAllTestnetChainIds() {
-    return Object.keys(testnetConfigs).map(Number);
+    return Object.keys(chainConfigs_1.testnetConfigs).map(Number);
 }
 exports.getAllTestnetChainIds = getAllTestnetChainIds;
 function getAllChainIds() {
@@ -59,7 +42,7 @@ function getHardhatNetworks(options = {}) {
                 const networkName = `${config.network}-${networkType}`;
                 networks[networkName] = {
                     url: config.rpc,
-                    chainId: config.chainId,
+                    chainId,
                     ...defaultConfig,
                 };
             }
