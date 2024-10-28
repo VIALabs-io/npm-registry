@@ -1,6 +1,6 @@
 export interface ChainConfig {
   name: string;
-  network: 'mainnet' | 'testnet';
+  network: 'mainnet' | 'testnet' | 'stagenet';
   type: 'evm' | 'solana';
   chainId: number;
   message: string;

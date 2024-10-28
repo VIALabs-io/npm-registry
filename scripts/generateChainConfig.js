@@ -12,8 +12,6 @@ function generateConfigFile() {
             if (file.endsWith('.js')) {
                 const chainId = parseInt(file.split('.')[0]);
                 const config = require(path.join(mainnetPath, file));
-                // Ensure mainnet configs have network: 'mainnet'
-                config.network = 'mainnet';
                 mainnetConfigs[chainId] = config;
             }
         });
@@ -26,15 +24,13 @@ function generateConfigFile() {
             if (file.endsWith('.js')) {
                 const chainId = parseInt(file.split('.')[0]);
                 const config = require(path.join(testnetPath, file));
-                // All non-mainnet networks are considered testnet
-                config.network = 'testnet';
                 testnetConfigs[chainId] = config;
             }
         });
     }
 
     // Generate the bundled config file
-    const bundledContent = `// Auto-generated bundled chain configurations
+    const bundledContent = `// Auto-generated chain configurations
 // DO NOT EDIT DIRECTLY - Edit files in src/chains/{mainnet,testnet} instead
 
 import { ChainConfig, ChainConfigs } from './types';
@@ -42,11 +38,44 @@ import { ChainConfig, ChainConfigs } from './types';
 export const mainnetConfigs: ChainConfigs = ${JSON.stringify(mainnetConfigs, null, 2)};
 
 export const testnetConfigs: ChainConfigs = ${JSON.stringify(testnetConfigs, null, 2)};
+
+export const chains: {
+    mainnet: ChainConfigs;
+    testnet: ChainConfigs;
+} = {
+    mainnet: mainnetConfigs,
+    testnet: testnetConfigs
+};
+
+export function getChainConfig(chainId: number): ChainConfig | undefined {
+    return mainnetConfigs[chainId] || testnetConfigs[chainId];
+}
+
+export function isTestnet(chainId: number): boolean {
+    return !!testnetConfigs[chainId];
+}
+
+export function getProtoCCTPGateway(chainId: number): string | undefined {
+    const config = getChainConfig(chainId);
+    return config?.protoCCTPGateway;
+}
+
+export function getIntentCCTPGateway(chainId: number): string | undefined {
+    const config = getChainConfig(chainId);
+    return config?.intentCCTPGateway;
+}
+
+export function getCCTPLeafChains(chainId: number): ChainConfig['cctpLeafChains'] {
+    const config = getChainConfig(chainId);
+    return config?.cctpLeafChains;
+}
 `;
 
     // Write the bundled config
     const bundledPath = path.join(__dirname, '..', 'src', 'chainConfigs.ts');
     fs.writeFileSync(bundledPath, bundledContent);
+
+    console.log('Chain configurations bundled successfully in src/chainConfigs.ts');
 }
 
 generateConfigFile();
