@@ -1,18 +1,8 @@
-import { ChainConfig, ChainConfigs } from '../types';
-import * as fs from 'fs';
-import * as path from 'path';
+import { ChainConfig } from '../types';
+import { mainnetConfigs, testnetConfigs } from '../chainConfigs';
 
-// Load chain configurations
-let chainConfigs: ChainConfigs = {};
-
-try {
-  const configPath = path.join(__dirname, '..', 'chainConfig.json');
-  const rawConfig = fs.readFileSync(configPath, 'utf8');
-  const allConfigs = JSON.parse(rawConfig);
-  chainConfigs = { ...allConfigs.mainnet, ...allConfigs.testnet };
-} catch (error) {
-  console.error('Error loading chain configurations:', error);
-}
+// Combine mainnet and testnet configs
+const chainConfigs = { ...mainnetConfigs, ...testnetConfigs };
 
 export function getChainConfig(chainId: number): ChainConfig | undefined {
   return chainConfigs[chainId];
