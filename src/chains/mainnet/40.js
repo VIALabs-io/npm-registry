@@ -6,7 +6,8 @@ const chainConfig = {
   "message": "0x15AC559DA4951c796DB6620fAb286B96840D039A",
   "feeToken": "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
   "weth": "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
-  "featureGateway": "0xA10953dEFac127d1b7A645f81045aB5127893124"
+  "featureGateway": "0xA10953dEFac127d1b7A645f81045aB5127893124",
+  "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
 };
 
 module.exports = chainConfig;

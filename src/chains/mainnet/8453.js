@@ -13,8 +13,15 @@ const chainConfig = {
   "circleMessageTransmitter": "0xAD09780d193884d503182aD4588450C416D6F9D4",
   "circleTokenMinter": "0xe45B133ddc64bE80252b0e9c75A8E74EF280eEd6",
   "featureGateway": "0x9A9b54a7b63361743531C52E5f7fa2d4BD3fD33e",
-  "protoCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
-  "intentCCTPGateway": "0x0000000000000000000000000000000000000000" // Placeholder address
+  "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
+  "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
+  "cctpLeafChains": [
+    {
+      "chainId": 40,
+      "rootManager": "0xbEc2085d80E71969625E8b497Bc3d66a2f665D99",
+      "leafManager": "0x9e0517ADAEc365Af770F67F7e83055d60Ad7D4dc"
+    }
+  ]
 };
 
 module.exports = chainConfig;
