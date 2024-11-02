@@ -6,7 +6,11 @@ const chainConfig = {
   "message": "0x15AC559DA4951c796DB6620fAb286B96840D039A",
   "feeToken": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
   "weth": "0x4200000000000000000000000000000000000006",
-  "featureGateway": "0x39869675cCC8B39Eb8016C2Cb7a718B119442b56"
+  "circleTokenMessenger": "0x2B4069517957735bE00ceE0fadAE88a26365528f",
+  "circleMessageTransmitter": "0x4d41f22c5a0e5c74090899e5a8fb597a8842b3e8",
+  "featureGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
+  "protoCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
+  "intentCCTPGateway": "0x0000000000000000000000000000000000000000" // Placeholder address
 };
 
 module.exports = chainConfig;

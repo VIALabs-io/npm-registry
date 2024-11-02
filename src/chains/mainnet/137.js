@@ -11,7 +11,10 @@ const chainConfig = {
   "explorer": "https://polygonscan.com/",
   "circleTokenMessenger": "0x9daF8c91AEFAE50b9c0E69629D3F6Ca40cA3B3FE",
   "circleMessageTransmitter": "0xF3be9355363857F3e001be68856A2f96b4C39Ba9",
-  "circleTokenMinter": "0x10f7835F827D6Cf035115E10c50A853d7FB2D2EC"
+  "circleTokenMinter": "0x10f7835F827D6Cf035115E10c50A853d7FB2D2EC",
+  "featureGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
+  "protoCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
+  "intentCCTPGateway": "0x0000000000000000000000000000000000000000" // Placeholder address
 };
 
 module.exports = chainConfig;
