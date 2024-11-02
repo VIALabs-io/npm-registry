@@ -12,6 +12,7 @@ const chainConfig = {
   "circleTokenMessenger": "0x19330d10D9Cc8751218eaf51E8885D058642E08A",
   "circleMessageTransmitter": "0xC30362313FBBA5cf9163F0bb16a0e01f01A896ca",
   "circleTokenMinter": "0xE7Ed1fa7f45D05C508232aa32649D89b73b8bA48",
+  "isCCTPEnabled": true,
   "featureGateway": "0x88eC0180180Af475430eb6e8F38981cb0b61F93d",
   "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
   "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
