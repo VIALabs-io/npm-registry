@@ -10,6 +10,10 @@
     "prepare": "npm run build",
     "test": "jest"
   },
+  "exports": {
+    ".": "./dist/index.js",
+    "./frontend": "./dist/chainConfigs.js"
+  },
   "keywords": [
     "blockchain",
     "configuration",
