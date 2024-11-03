@@ -15,6 +15,7 @@ const chainConfig = {
   "circleTokenMinter": "0xc4922d64a24675e16e1586e3e3aa56c06fabe907",
   "isCCTPEnabled": true,
   "featureGateway": "0xba30eFc4F2553d0A7733D2CA3cEc98cDC4D428ba",
+  "featureCCTP": "0x31f840D4cFB05F2B72C41B501d6dd1CFe4106aa6",
   "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
   "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
   "cctpLeafChains": [
