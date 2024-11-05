@@ -15,7 +15,7 @@ const chainConfig = {
   "isCCTPEnabled": true,
   "featureGateway": "0x9bf255FB6C7bbB0e060Ed6CC8996edFB0c4f5e0b",
   "featureCCTP": "0x34d786a3cA75c11cb941840992De0Df2Eb706ad7",
-  "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
+  "protoCCTPGateway": "0xc94Ce66CEeaC96fdeFc1B01dE3Ff066bF24520EE",
   "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
 };
 
