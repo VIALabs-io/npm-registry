@@ -21,8 +21,8 @@ const chainConfig = {
   "cctpLeafChains": [
     {
       "chainId": 48900,
-      "rootManager": "0x8712796136Ac8e0EEeC123251ef93702f265aa80",
-      "leafManager": "0x9e0517ADAEc365Af770F67F7e83055d60Ad7D4dc"
+      "rootManager": "0x3012C9175ef181Fb8Da827cc439cd88861cf6aaB",
+      "leafManager": "0x3fBD26bd2F4ea70042634ac10972C3E3DeaCd875"
     }
   ]
 };
