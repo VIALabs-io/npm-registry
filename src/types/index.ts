@@ -1,7 +1,7 @@
 export interface ChainConfig {
   name: string;
   network: 'mainnet' | 'testnet' | 'stagenet';
-  type: 'evm' | 'solana';
+  type: 'evm' | 'solana' | 'reef';
   chainId: number;
   message: string;
   feeToken: string;
