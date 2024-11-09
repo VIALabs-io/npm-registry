@@ -19,19 +19,9 @@ const chainConfig = {
   // This is a root chain for CCTP
   "cctpLeafChains": [
     {
-      "chainId": 997,
-      "rootManager": "0x448811d70486296d4e2B60E4258328957C94EaA7",
-      "leafManager": "0x28d03e97e68Fb138a2318A2627806dfAF9972755"
-    },
-    {
-      "chainId": 37714555429,
-      "rootManager": "0x46bFafc74f8dD1FC4c8Ea963ac881504Ba75D5fD",
-      "leafManager": "0x9d1421d5813f6ba074880472D5775e820e18Fd7A"
-    },
-    {
-        "chainId": 5115,
-        "rootManager": "0x610F32033567097454cE0DF669Abc949Fb2f256B",
-        "leafManager": "0x2660b88B931aE3b8dBcb796F3038305C46eb7F88"
+      "chainId": 5115,
+      "rootManager": "0x610F32033567097454cE0DF669Abc949Fb2f256B",
+      "leafManager": "0x2660b88B931aE3b8dBcb796F3038305C46eb7F88"
     }
   ]
 };
