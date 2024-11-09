@@ -19,11 +19,6 @@ const chainConfig = {
   // This is a root chain for CCTP
   "cctpLeafChains": [
     {
-      "chainId": 64165,
-      "rootManager": "0xD882a92421490aD0e500043B7E60506F45bE6716",
-      "leafManager": "0x3EdCD98439d8fc68Fc46825C97880Af9eF4b0272"
-    },
-    {
       "chainId": 195,
       "rootManager": "0x60fB013997CFa53729A9c8Dfbacecc65c8Dde897",
       "leafManager": "0xa06f5842bB1bF8ea42397fb116BFA17c3F8c8c5b"
