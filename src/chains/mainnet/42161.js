@@ -15,14 +15,9 @@ const chainConfig = {
   "isCCTPEnabled": true,
   "featureGateway": "0x88eC0180180Af475430eb6e8F38981cb0b61F93d",
   "featureCCTP": "0x5a596d81cF8911818F3231eb87a77Ac1426485Bf",
-  "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
+  "protoCCTPGateway": "0xA827a895e23cC8ec6d829AF7254BC30b3a285374",
   "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
   "cctpLeafChains": [
-    {
-      "chainId": 660279,
-      "rootManager": "0x482fEC83988a57f7B853EBE3927Edbd49DBF44BC",
-      "leafManager": "0x9e0517ADAEc365Af770F67F7e83055d60Ad7D4dc"
-    },
     {
       "chainId": 995,
       "rootManager": "0x56f6f2A23AE5EF82D8Dc46934F7Cf8D0b15ddEdD",
