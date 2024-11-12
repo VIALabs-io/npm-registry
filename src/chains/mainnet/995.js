@@ -7,7 +7,7 @@ const chainConfig = {
   "feeToken": "",
   "weth": "0xCFaEB74409E4C6756C43F75455fc42A6A3FdEb1f",
   "usdc": "0x85DAc390d61cdaCb346701cC4948870A704d3f4a",
-  "protoCCTPGateway": "0xe8545726174110b5340F2dB0cA18597Fe5B535D6",
+  "protoCCTPGateway": "0x34B57108097F9ca628eF178E824c7A4dB5a20FEA",
 };
 
 module.exports = chainConfig;

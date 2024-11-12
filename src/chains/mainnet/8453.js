@@ -15,7 +15,7 @@ const chainConfig = {
   "isCCTPEnabled": true,
   "featureGateway": "0x9A9b54a7b63361743531C52E5f7fa2d4BD3fD33e",
   "featureCCTP": "0x29451F0ee3Ef946b49598232928E98b30c6f255A",
-  "protoCCTPGateway": "0x0b13C91819b0F6279CFd2CDaf190163B91683432",
+  "protoCCTPGateway": "0x89e8c04ED5345d06f984A00f08d2F52b5fbBEE44",
   "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
   "cctpLeafChains": [
     {
