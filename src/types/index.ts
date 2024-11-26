@@ -4,6 +4,7 @@ export interface ChainConfig {
   type: 'evm' | 'solana' | 'reef';
   chainId: number;
   message: string;
+  messageSubstrate?: string;
   feeToken: string;
   weth: string;
   usdc?: string;
