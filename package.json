@@ -8,7 +8,7 @@
     "build": "tsc",
     "prepare": "npm run build",
     "test": "jest",
-    "postinstall": "node ./scripts/generateChainConfig.js && tsc"
+    "postinstall": "node ./scripts/generateChainConfig.js && tsc -p ./tsconfig.json"
   },
   "keywords": [
     "blockchain",
@@ -33,7 +33,8 @@
   "files": [
     "dist",
     "src",
-    "scripts"
+    "scripts",
+    "tsconfig.json"
   ],
   "jest": {
     "preset": "ts-jest",
