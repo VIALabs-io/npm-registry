@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "postinstall": "ls -la && node ./scripts/generateChainConfig.js"
+    "postinstall": "ls -la src/ && node ./scripts/generateChainConfig.js"
   },
   "keywords": [
     "blockchain",
@@ -30,7 +30,8 @@
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "scripts"
   ],
   "jest": {
     "preset": "ts-jest",
