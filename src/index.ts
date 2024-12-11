@@ -3,7 +3,13 @@ import { supportsCCTP, getCCTPGateways } from './utils';
 import { globalConfig, getAccountantAddress as getAccountantAddressFromGlobal } from './global';
 import { mainnetConfigs, testnetConfigs } from './chainConfigs';
 
-export function getChainConfig(chainId: number): ChainConfig | undefined {
+export function getChainConfig(chainId: number, type: string = ""): ChainConfig | undefined {
+    if (type) {
+        // @note for chains that re-use the same id
+        const chainData = type == "mainnet" ? mainnetConfigs[chainId] : testnetConfigs[chainId];
+        return chainData;
+    }
+
     return mainnetConfigs[chainId] || testnetConfigs[chainId];
 }
 
