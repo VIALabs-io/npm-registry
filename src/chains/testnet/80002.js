@@ -1,5 +1,5 @@
 const chainConfig = {
-  "name": "polygon-mumbai",
+  "name": "polygon-amoy",
   "network": "testnet",
   "type": "evm",
   "chainId": 80002,
@@ -16,6 +16,13 @@ const chainConfig = {
   "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
   "protoCCTPGateway": "0xEE4F67bCFfe3125495Eb5127DFBC223542b7D982",
   "isCCTPEnabled": true,
+  "cctpLeafChains": [
+    {
+      "chainId": 65100004,
+      "rootManager": "0x1EdAbc528261A942e58eD1e02E4c5C849a9F7cdD",
+      "leafManager": "0x9d1421d5813f6ba074880472D5775e820e18Fd7A"
+    }
+  ]
 };
 
 module.exports = chainConfig;
