@@ -14,7 +14,7 @@ const chainConfig = {
   "circleTokenMessenger": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
   "circleMessageTransmitter": "0xaCF1ceeF35caAc005e15888dDb8A3515C41B4872",
   "circleTokenMinter": "0xE997d7d2F6E065a9A93Fa2175E878Fb9081F1f0A",
-  "protoCCTPGateway": "0xAfd42E36B2c661BcAb94d5FF3B47c135043591c8",
+  "protoCCTPGateway": "0x040F70B724F1E7f8509848e750bbF10e20b73f60",
   "isCCTPEnabled": true,
   // This is a root chain for CCTP
   "cctpLeafChains": [
