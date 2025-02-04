@@ -27,6 +27,16 @@ const chainConfig = {
       "chainId": 195,
       "rootManager": "0x60fB013997CFa53729A9c8Dfbacecc65c8Dde897",
       "leafManager": "0xa06f5842bB1bF8ea42397fb116BFA17c3F8c8c5b"
+    },
+    {
+      "chainId": 779672,
+      "rootManager": "0x6e2e30864394fc443f84c735B855E2d1C1553fC3",
+      "leafManager": "0xb3093D918131C7A474c8Fad8Fe9ac246f6E113CA"
+    },
+    {
+      "chainId": 173750,
+      "rootManager": "0xad1A3c80492e6E1e1ad115020B0270EEc4C52457",
+      "leafManager": "0x28d03e97e68Fb138a2318A2627806dfAF9972755"
     }
   ]
 };
