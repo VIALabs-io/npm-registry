@@ -27,6 +27,11 @@ const chainConfig = {
       "chainId": 995,
       "rootManager": "0x56f6f2A23AE5EF82D8Dc46934F7Cf8D0b15ddEdD",
       "leafManager": "0xA5895cB2F28579a1B002c524DB7A5250EE6A5773"
+    },
+    {
+      "chainId": 6900,
+      "rootManager": "0x30af901F0F031Da450AB6f0AB695185690E10c91",
+      "leafManager": "0x1c0e7F1967aB417e7363112500d770BCCBf18BbD"
     }
   ]
 };
