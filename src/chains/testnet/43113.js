@@ -30,8 +30,8 @@ const chainConfig = {
     },
     {
       "chainId": 779672,
-      "rootManager": "0x6e2e30864394fc443f84c735B855E2d1C1553fC3",
-      "leafManager": "0xb3093D918131C7A474c8Fad8Fe9ac246f6E113CA"
+      "rootManager": "0xA9256742d8240E986AaBE6d9A594da914E425785",
+      "leafManager": "0x1db51fEfc5c67E2C6D5A5BA18507F762b9715C43"
     },
     {
       "chainId": 173750,
