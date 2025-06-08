@@ -3,9 +3,9 @@ const chainConfig = {
   "network": "testnet",
   "type": "evm",
   "chainId": 2368,
-  "message": "0x78CC50562941f385c3d0c5204385c3CA686d85b8",
-  "feeToken": "0xAF1f0C79cc043AD4a263dfe7715ca657F9bDeced",
-  "weth": "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F"
+  "message": "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+  "feeToken": "0x9d75f706b986F0075b3778a12153390273dE95eC",
+  "weth": "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f"
 };
 
 module.exports = chainConfig;
