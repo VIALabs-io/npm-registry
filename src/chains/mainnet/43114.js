@@ -22,7 +22,7 @@ const chainConfig = {
     {
       "chainId": 13939,
       "rootManager": "0x2a4Ff967F8B18DA6F5264Cc6CE5fAB6BDA47eDe8",
-      "leafManager": "0xCc7f1f060990360C91D9887D08aD8497FeDd1605"
+      "leafManager": "0x8E738780524A533b2d6BDb9EF6BCaa0A819AC62c"
     }
   ]
 };
