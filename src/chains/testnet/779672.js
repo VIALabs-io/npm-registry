@@ -4,9 +4,9 @@ const chainConfig = {
   "type": "evm",
   "chainId": 779672,
   "message": "0x0000000000000000000000000000000000000000", // @note Not deployed by design
-  "feeToken": "0xA1AeC40c1B58226407B8b0dF050c8D9ab0df7a7D",
-  "usdc": "0xA1AeC40c1B58226407B8b0dF050c8D9ab0df7a7D",
-  "weth": "0x0B5D4d5c8FfF14322d598BF45795ce6133eF5992", // @note Temporary mock weth
+  "feeToken": "0xE227dB899AC4b04a44b4E025C5b257bBC5CaC730",
+  "usdc": "0xE227dB899AC4b04a44b4E025C5b257bBC5CaC730",
+  "weth": "0x2B24e065Ff26E65440bB76A323404044b4e98859", // @note Temporary mock weth
   "protoCCTPGateway": "",
 };
 
