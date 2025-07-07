@@ -4,10 +4,10 @@ const chainConfig = {
   "type": "evm",
   "chainId": 173750,
   "message": "0x0000000000000000000000000000000000000000", // @note Not deployed by design
-  "feeToken": "0x2777023E33B88CE622B15eCfA4ADa3cb5a9C545f",
-  "usdc": "0x2777023E33B88CE622B15eCfA4ADa3cb5a9C545f",
-  "weth": "0x8228407F8bc38790997616B18AF8773016270558", // @note Temporary mock weth
-  "protoCCTPGateway": "0x3C615A128acb9E3247d4CF24CaA0a987d3816754",
+  "feeToken": "0xA1AeC40c1B58226407B8b0dF050c8D9ab0df7a7D",
+  "usdc": "0xA1AeC40c1B58226407B8b0dF050c8D9ab0df7a7D",
+  "weth": "0x0B5D4d5c8FfF14322d598BF45795ce6133eF5992", // @note Temporary mock weth
+  "protoCCTPGateway": "",
 };
 
 module.exports = chainConfig;
