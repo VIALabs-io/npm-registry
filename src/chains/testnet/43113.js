@@ -30,13 +30,13 @@ const chainConfig = {
     },
     {
       "chainId": 779672,
-      "rootManager": "0xA9256742d8240E986AaBE6d9A594da914E425785",
-      "leafManager": "0x1db51fEfc5c67E2C6D5A5BA18507F762b9715C43"
+      "rootManager": "0x3bE439F306b4838f8E7Fa24646c04Ad192a42586",
+      "leafManager": "0x804bbFd5d5491Da318bAD9e665b01600861e54a7"
     },
     {
       "chainId": 173750,
-      "rootManager": "0xad1A3c80492e6E1e1ad115020B0270EEc4C52457",
-      "leafManager": "0x28d03e97e68Fb138a2318A2627806dfAF9972755"
+      "rootManager": "0x376736B474259EC3278F6c36CCfAB24BdDe24653",
+      "leafManager": "0x31c84d37Ff57E53a7a9fA77C57E62c557Bd4F15e"
     }
   ]
 };
