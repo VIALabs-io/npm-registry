@@ -21,6 +21,11 @@ const chainConfig = {
       "chainId": 65100004,
       "rootManager": "0x1EdAbc528261A942e58eD1e02E4c5C849a9F7cdD",
       "leafManager": "0x9d1421d5813f6ba074880472D5775e820e18Fd7A"
+    },
+    {
+      "chainId": 65010004, // @note New bakerloo
+      "rootManager": "0xB6a2578b7e59D6DBac6236b9B759C915aDD8FB16",
+      "leafManager": "0xF50137d3e31ca62A6Ca7A9e49582A99118148088"
     }
   ]
 };
