@@ -1,6 +1,6 @@
 const chainConfig = {
   "name": "autonity-testnet2",
-  "network": "autonity-testnet2",
+  "network": "testnet",
   "type": "evm",
   "chainId": 65010004,
   "message": "0x84126A2D8dF65Bb32E6952c351f877E59e02a17f",
