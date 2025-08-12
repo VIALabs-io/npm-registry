@@ -17,6 +17,13 @@ const chainConfig = {
   "featureCCTP": "0x34d786a3cA75c11cb941840992De0Df2Eb706ad7",
   "protoCCTPGateway": "0x996fCc660B3dF10d547A3A79A75191f1E344c2cb",
   "intentCCTPGateway": "0x0000000000000000000000000000000000000000", // Placeholder address
+  "cctpLeafChains": [
+    {
+      "chainId": 65000000,
+      "rootManager": "0x7501cea78279F63327E112192295C9F3c1Da8fBC",
+      "leafManager": "0x7d3bC4460265e49c23fa611a8686503661D2B358"
+    }
+  ]
 };
 
 module.exports = chainConfig;
