@@ -22,6 +22,11 @@ const chainConfig = {
       "chainId": 65000000,
       "rootManager": "0x7501cea78279F63327E112192295C9F3c1Da8fBC",
       "leafManager": "0x7d3bC4460265e49c23fa611a8686503661D2B358"
+    },
+    {
+      "chainId": 1490, // @note This is the UPGRADE for proto, from 29/08/2025
+      "rootManager": "0x61d3b775A47104BA92e820b9360AC9BD34691E2b",
+      "leafManager": "0xc0Ee2a47a5E94A468FB85df4992e66188347C994"
     }
   ]
 };
