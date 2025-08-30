@@ -9,7 +9,7 @@ const chainConfig = {
   "weth": "0xC0C0A38067Ba977676AB4aFD9834dB030901bE2d",
   "rpc": "https://1490.rpc.vialabs.io/",
   "explorer": "https://explorer.vitruveo.xyz/",
-  "protoCCTPGateway": "0xd6d9317E95Ca1cEDe3D06F3D6844a739194212cc",
+  "protoCCTPGateway": "0x3CBf846eD83dF3417c2dB897b3DDF7C96E7465a3",
 };
 
 module.exports = chainConfig;
